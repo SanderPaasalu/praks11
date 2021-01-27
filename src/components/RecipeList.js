@@ -6,7 +6,7 @@ const RecipeList = (props) => {
       <div>
         <ul>
           {props.recipes.map((recipe, index) => {
-            return <li className='list' key={recipe.name}>{recipe.name} {recipe.duration} {recipe.tags[0]} {recipe.tags[1]} <Link to={`/recipes/${index}`}> Vaata lähemalt</Link></li>
+            return <li className='list' key={recipe.name}><span>{recipe.name}</span><span> {recipe.duration}min</span><span> {recipe.tags[0]}</span> <span>{recipe.tags[1]}</span> <span><Link to={`/recipes/${index}`}> Vaata lähemalt</Link></span></li>
           })}
         </ul>
       </div>

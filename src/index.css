@@ -47,3 +47,8 @@ code {
   list-style-type: none;
   margin: 10px;
 }
+
+span {
+  border: solid 2px black;
+  margin: 10px;
+}
